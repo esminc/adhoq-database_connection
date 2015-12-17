@@ -22,7 +22,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+Adhoq.configure do |c|
+  c.database_connection = Adhoq::DatabaseConnection.new(
+    'ReadOnlyDatabase',
+    adapter: 'sqlite3',
+    database: 'read_only_database',
+  )
+end
+```
+
+or
+
+```
+Adhoq.configure do |c|
+  c.database_connection = Adhoq::DatabaseConnection.load_file(
+    'ReadOnlyDatabase',
+    'read_only_database_config.yaml',
+  )
+end
+```
+
 
 ## Development
 
