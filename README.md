@@ -1,4 +1,5 @@
 # Adhoq::DatabaseConnection
+[![Build Status](https://travis-ci.org/eminc/adhoq-database_connection.svg?branch=master)](https://travis-ci.org/esminc/adhoq-database_connection)
 
 Adhoq::DatabaseConnection is helper to use other database in [Adhoq](https://github.com/esminc/adhoq).
 
